@@ -1,0 +1,10 @@
+#!/bin/bash
+
+load inquirer
+
+check() {
+  # do nothing
+  echo "everything is ready" >> /dev/null
+}
+
+check $@
