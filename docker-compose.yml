@@ -4,6 +4,8 @@ services:
   github-proxy:
     restart: always
     image: whatwewant/github-proxy:${SERVICE_GITHUB_PROXY_IMAGE_VERSION}
+    ports:
+      - 0.0.0.0:${SERVICE_GITHUB_PROXY_PORT}:80
     environment:
       DEBUG: "${SERVICE_GITHUB_PROXY_DEBUG}"
     volumes:

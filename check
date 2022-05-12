@@ -3,8 +3,7 @@
 load inquirer
 
 check() {
-  # do nothing
-  echo "everything is ready" >> /dev/null
+  config::check_or_set SERVICE_GITHUB_PROXY_PORT text $SERVICE_CONFIG
 }
 
 check $@
